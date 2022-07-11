@@ -1,0 +1,44 @@
+footer {
+    min-height: 500px;
+}
+
+.footer-container {
+    background-color: --main-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.about-me-text-cv img,
+.footer-socials img {
+    height: 35px;
+    width: 35px;
+    border: --main-color 3px solid;
+}
+
+.about-me-text-cv img:hover,
+.footer-socials img:hover {
+    text-decoration: underline;
+    border-bottom: --black-color 3px solid;
+}
+
+.footer-suggestions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer-copyrights {
+    text-align: center;
+    padding: 10px;
+    font-weight: 700;
+    background-color: --black-color;
+    color: --main-color;
+}

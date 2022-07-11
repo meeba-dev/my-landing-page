@@ -1,13 +1,180 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+    --main-color: #fff36d;
+    --black-color: #000000;
+    --white-color: #ffffff;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+main {
+  background-color: #fff36d;
+}
+
+#about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 25px;
+  padding: 25px;
+}
+
+.about-me-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.about-me-photo {
+  width: 50%;
+}
+
+.about-me-photo img {
+  width: 415px;
+  height: 440px;
+  box-sizing: border-box;
+  object-fit: cover;
+  border: #000 2px solid;
+}
+
+.about-me-text {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.about-me-text-icons {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.about-me-text-icons img {
+  width: 20px;
+  height: 20px;
+}
+
+.about-me-text-description {
+  font-size: 22px;
+}
+
+.about-me-text-button {
+  align-self: flex-end;
+  padding-right: 2em;
+}
+
+.portfolio-container img:nth-child(1) {
+  object-fit: contain;
+  background-color: #fff;
+}
+
+.about-me-photo-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 25px;
+}
+
+.about-me-text {
+  width: 80%;
+  text-indent: 20px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+#portfolio {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 25px;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-container-item {
+  width: 360px;
+  height: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.portfolio-container-item img {
+  width: 100%;
+  height: 100%; 
+  object-fit: contain;
+}
+
+.name-form {
+  display: flex;
+  gap: 15px;
+}
+
+.name-form .input-form {
+  width: 182px;
+}
+
+.input-form, 
+.textarea-form {
+  background-color: #ffff66;
+  padding: 5px 10px;
+  font-family: inherit;
+  border: none;
+  width: 400px;
+}
+
+.input-form {
+  height: 30px;
+}
+
+.textarea-form {
+  resize: none;
+  height: 150px;
+}
+
+::placeholder {
+  color: #000;
+}
+
+#payment-options {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.payment-options-list {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.payment-options-list-item img {
+  max-width: 100px;
+}
+
+#portfolio {
+  min-height: 500px;
 }

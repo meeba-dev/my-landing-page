@@ -1,0 +1,38 @@
+.btn {
+    background: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.btn-header {
+    font-weight: 400;
+    color: --main-color;
+    border: --main-color solid 2px;
+    padding: 10px;
+}
+
+.btn-header:hover {
+    color: --black-color;
+    border: --black-color solid 2px;
+}
+
+.btn-form,
+.btn-cv {
+    background-color: --black-color;
+    color: --main-color;
+    border: --black-color 2px solid;
+    padding: 15px;
+}
+
+.btn-form:hover,
+.btn-cv:hover {
+    background-color: --main-color;
+    color: --black-color;
+}
+
+.btn-prt {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
