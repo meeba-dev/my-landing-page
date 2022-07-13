@@ -1,11 +1,12 @@
 import './Footer.css';
+import '../index.css';
 
 function Footer() {
     return (
         <footer>
-            <ul class="footer-container">
+            <ul className='footer-container'>
                 <li>
-                    <ul class="footer-socials" id="contacts">
+                    <ul className='footer-socials' id="contacts">
                         <li>
                             <a href="https://www.linkedin.com/in/mikhail-baum-2a4391126">
                                 <img src="./img/social/linkedin.png" alt="linkedin"/>
@@ -24,7 +25,7 @@ function Footer() {
                     </ul>
                 </li>
             </ul>
-            <section class="footer-copyrights">
+            <section className='footer-copyrights'>
                 <p>&#60; &#62; Made by Mikhail Baum</p>
             </section>
         </footer>
