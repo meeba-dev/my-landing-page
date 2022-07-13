@@ -1,12 +1,11 @@
 import './Header.css';
-import '../index.css';
 
 function Header() {
     return(
         <header>
             <nav>
                 <div className='nav-logo'>
-                    <img src="./public/img/logo/logo.png" alt='logo'/>
+                    <img src="./img/logo/logo.png" alt='logo'/>
                 </div>
                 <ul className='nav-list'>
                     <li className='nav-list-item'>

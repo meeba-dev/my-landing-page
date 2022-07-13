@@ -22,7 +22,7 @@ body {
 }
 
 main {
-  background-color: #fff36d;
+    background-color: var(--main-color);
 }
 
 #about-me {
@@ -49,7 +49,7 @@ main {
   height: 440px;
   box-sizing: border-box;
   object-fit: cover;
-  border: #000 2px solid;
+  border: var(--black-color) 2px solid;
 }
 
 .about-me-text {
@@ -118,7 +118,7 @@ main {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  background-color: #fff;
+  background-color: var(--white-color);
 }
 
 .portfolio-container-item img {
@@ -138,7 +138,7 @@ main {
 
 .input-form, 
 .textarea-form {
-  background-color: #ffff66;
+  background-color: var(--main-color);
   padding: 5px 10px;
   font-family: inherit;
   border: none;
@@ -155,7 +155,7 @@ main {
 }
 
 ::placeholder {
-  color: #000;
+  color: var(--black-color);
 }
 
 #payment-options {

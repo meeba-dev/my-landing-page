@@ -20,9 +20,9 @@
 .modal-container,
 .modal-container-portfolio {
     position: relative;
-    background-color: #fff36d;
+    background-color: var(--main-color);
     padding: 5px 15px 15px;
-    border: 2px solid #000;
+    border: 2px solid var(--black-color);
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -63,12 +63,12 @@
 
 .modal-container-portfolio {
     margin: 2% auto;
-    background-color: #fff;
+    background-color: var(--white-color);
 }
 
 .modal-container-portfolio a {
     text-decoration: none;
-    color: #000;
+    color: var(--black-color);
     font-size: 20px;
     font-weight: 700;
 }

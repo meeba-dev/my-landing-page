@@ -7,28 +7,28 @@
 
 .btn-header {
     font-weight: 400;
-    color: --main-color;
-    border: --main-color solid 2px;
+    color: var(--main-color);
+    border: var(--main-color) solid 2px;
     padding: 10px;
 }
 
 .btn-header:hover {
-    color: --black-color;
-    border: --black-color solid 2px;
+    color: var(--black-color);
+    border: var(--black-color) solid 2px;
 }
 
 .btn-form,
 .btn-cv {
-    background-color: --black-color;
-    color: --main-color;
-    border: --black-color 2px solid;
+    background-color: var(--black-color);
+    color: var(--main-color);
+    border: var(--black-color) 2px solid;
     padding: 15px;
 }
 
 .btn-form:hover,
 .btn-cv:hover {
-    background-color: --main-color;
-    color: --black-color;
+    background-color: var(--main-color);
+    color: var(--black-color);
 }
 
 .btn-prt {

@@ -1,5 +1,4 @@
 import './Main.css';
-import '../index.css';
 import { downloadCV, sendEmail } from './index.js';
 import Map from '../map/Map';
 
@@ -69,6 +68,7 @@ function Main() {
                     </div>
                 </div>
             </div>
+            
             <div id="portfolio">
                 <h1>My projects</h1>
                 <ul className='portfolio-container'>
@@ -150,9 +150,9 @@ function Main() {
             </div>
             <div id="optimax">
                 <div className='modal-container-portfolio'>
-                <div className='modal-container-header'>
-                        <h1>Optimax Cart</h1>
-                        <img className='close' src="./img/icons/close.png" alt="close-cross" />
+                    <div className='modal-container-header'>
+                            <h1>Optimax Cart</h1>
+                            <img className='close' src="./img/icons/close.png" alt="close-cross" />
                     </div>
                     <div className='modal-container-image'>
                         <img src="./img/demo/optimax-demo.png" alt="optimax-demo" />

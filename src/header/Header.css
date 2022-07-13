@@ -3,7 +3,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: --main-color;
+    background-color: var(--main-color);
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 700;
     font-size: 22px;
@@ -18,13 +18,13 @@ header {
     min-height: 800px;
     display: flex;
     align-items: flex-end;
-    border-top: --black-color 2px solid;
-    border-bottom: --black-color 2px solid;
+    border-top: var(--black-color) 2px solid;
+    border-bottom: var(--black-color) 2px solid;
 }
 
 .header-photo-headline {
     width: 50%;
-    color: --main-color;
+    color: var(--main-color);
     padding: 0 0 180px 100px;
 }
 
@@ -57,10 +57,10 @@ nav {
 
 .nav-list-item a {
     text-decoration: none;
-    color: --black-color;
-    border: --main-color 3px solid;
+    color: var(--black-color);
+    border: var(--main-color) 3px solid;
 }
 
 .nav-list-item a:hover {
-    border-bottom: --black-color 3px solid;
+    border-bottom: var(--black-color) 3px solid;
 }
