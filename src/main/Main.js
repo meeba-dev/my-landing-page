@@ -68,7 +68,7 @@ function Main() {
                     </div>
                 </div>
             </div>
-            
+            <Map className="leaflet-container"/>
             <div id="portfolio">
                 <h1>My projects</h1>
                 <ul className='portfolio-container'>
@@ -84,12 +84,12 @@ function Main() {
                     </li>
                     <li className='portfolio-container-item'>
                         <button type="button" className='btn-prt btn-prt-3'>
-                            <img src="./img/placeholder-small.png" alt="image-placeholder" />
+                            <img src="./img/placeholder-small.png" alt="placeholder" />
                         </button>
                     </li>
                     <li className='portfolio-container-item'>
                         <button type="button" className='btn-prt btn-prt-4'>
-                            <img src="./img/placeholder-small-coffee.png" alt="image-placeholder" />
+                            <img src="./img/placeholder-small-coffee.png" alt="placeholder" />
                         </button>
                     </li>
                 </ul>
