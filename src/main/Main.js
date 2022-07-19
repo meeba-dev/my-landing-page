@@ -1,4 +1,5 @@
 import './Main.css';
+import '../map/Map.css';
 import { downloadCV, sendEmail } from './index.js';
 import Map from '../map/Map';
 
@@ -68,7 +69,6 @@ function Main() {
                     </div>
                 </div>
             </div>
-            <Map className="leaflet-container"/>
             <div id="portfolio">
                 <h1>My projects</h1>
                 <ul className='portfolio-container'>
@@ -110,6 +110,7 @@ function Main() {
                     </li>
                 </ul>
             </div>
+            <Map />
             <div id="feedback">
                 <div className='modal-container'>
                     <div className='modal-container-header'>
