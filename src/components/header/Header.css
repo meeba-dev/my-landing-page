@@ -10,7 +10,7 @@ header {
 }
 
 .header-photo {
-    background: url('../../public/img/me/MK-1006-black.jpg');
+    background: url('../../../public/img/me/MK-1006-black.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center 20%;

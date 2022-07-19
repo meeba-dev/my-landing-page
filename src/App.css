@@ -1,7 +1,3 @@
 @import "./index.css";
-@import "./header/Header.css";
-@import "./button/Button.css";
-@import "./map/Map.css";
-@import "./main/Main.css";
-@import "./footer/Footer.css";
-@import "./modal/Modal.css";
+@import "./components/button/Button.css";
+@import "./components/modal/Modal.css";
