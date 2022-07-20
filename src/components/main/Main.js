@@ -111,7 +111,7 @@ function Main() {
                 </ul>
             </div>
             <Map />
-            
+            <Feedback />
             <div id="doctor-calm">
                 <div className='modal-container-portfolio'>
                     <div className='modal-container-header'>
