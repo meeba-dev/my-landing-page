@@ -1,9 +1,10 @@
 import './Main.css';
-import { downloadCV, sendEmail } from './index.js';
+import { downloadCV } from './index.js';
 import Map from '../map/Map';
-import Feedback from '../feedback/Feedback';
+
 
 function Main() {
+    
     return(
         <main>
             <div id="about-me">
@@ -111,7 +112,6 @@ function Main() {
                 </ul>
             </div>
             <Map />
-            <Feedback />
             <div id="doctor-calm">
                 <div className='modal-container-portfolio'>
                     <div className='modal-container-header'>
