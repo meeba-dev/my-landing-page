@@ -1,7 +1,6 @@
 import './Main.css';
-import { downloadCV } from './index.js';
 import Map from '../map/Map';
-
+import { downloadCV } from './index.js';
 
 function Main() {
     

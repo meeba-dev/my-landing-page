@@ -11,6 +11,13 @@
     --white-color: #ffffff;
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
 ul {
     list-style: none;
 }
@@ -134,28 +141,6 @@ main {
 
 .name-form .input-form {
   width: 182px;
-}
-
-.input-form, 
-.textarea-form {
-  background-color: var(--main-color);
-  padding: 5px 10px;
-  font-family: inherit;
-  border: none;
-  width: 400px;
-}
-
-.input-form {
-  height: 30px;
-}
-
-.textarea-form {
-  resize: none;
-  height: 150px;
-}
-
-::placeholder {
-  color: var(--black-color);
 }
 
 #payment-options {
