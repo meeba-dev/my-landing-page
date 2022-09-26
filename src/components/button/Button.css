@@ -5,6 +5,11 @@
     font-family: inherit;
 }
 
+.btn-close {
+    border: none;
+    background-color: inherit;
+}
+
 .btn-header {
     font-weight: 400;
     color: var(--main-color);

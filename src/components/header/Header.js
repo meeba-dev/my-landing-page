@@ -73,7 +73,7 @@ function Header() {
                 <div className='modal-container'>
                     <div className='modal-container-header'>
                         <h1>Contact me</h1>
-                        <button type='button' onClick={closeModal}>
+                        <button className='btn-close' type='button' onClick={closeModal}>
                             <img className='close' src="./img/icons/close.png" alt="close-cross" />
                         </button>
                     </div>

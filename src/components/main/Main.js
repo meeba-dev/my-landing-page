@@ -1,9 +1,41 @@
 import './Main.css';
 import Map from '../map/Map';
+import React from 'react';
+import Modal from 'react-modal';
 import { downloadCV } from './index.js';
 
+const customStyles = {
+    content: {
+        background: 'var(--white-color)',
+        border: '2px solid var(--black-color)',
+        top: '50%',
+        left: '50%',
+        right: 'auto',
+        bottom: 'auto',
+        minWidth: '40em',
+        transform: 'translate(-50%, -50%)'
+    },
+    overlay: {
+        zIndex: 1000
+    }
+}
+
 function Main() {
-    
+    const [modalOneIsOpen, setOneIsOpen] = React.useState(false);
+    const [modalTwoIsOpen, setTwoIsOpen] = React.useState(false);
+
+    function openModalOne() {
+        setOneIsOpen(true);
+    }
+    function closeModalOne() {
+        setOneIsOpen(false);
+    }
+    function openModalTwo() {
+        setTwoIsOpen(true);
+    }
+    function closeModalTwo() {
+        setTwoIsOpen(false);
+    }
     return(
         <main>
             <div id="about-me">
@@ -73,12 +105,12 @@ function Main() {
                 <h1>My projects</h1>
                 <ul className='portfolio-container'>
                     <li className='portfolio-container-item'>
-                        <button type="button" className='btn-prt btn-prt-1'>
+                        <button type="button" className='btn-prt btn-prt-1' onClick={openModalOne}>
                             <img src="./img/logo/doctor-calm-small.png" alt="doctor-calm"/>
                         </button>
                     </li>
                     <li className='portfolio-container-item'>
-                        <button type="button" className='btn-prt btn-prt-2'>
+                        <button type="button" className='btn-prt btn-prt-2' onClick={openModalTwo}>
                             <img src="./img/logo/optimax-logo-small.png" alt="optimax-logo" />
                         </button>
                     </li>
@@ -111,11 +143,13 @@ function Main() {
                 </ul>
             </div>
             <Map />
-            <div id="doctor-calm">
+            <Modal isOpen={modalOneIsOpen} onRequestClose={closeModalOne} style={customStyles}>
                 <div className='modal-container-portfolio'>
                     <div className='modal-container-header'>
                         <h1>Doctor Calm</h1>
-                        <img className='close' src="./img/icons/close.png" alt="close-cross" />
+                        <button className='btn-close' type='button' onClick={closeModalOne}>
+                            <img className='close' src="./img/icons/close.png" alt="close-cross" />
+                        </button>
                     </div>
                     <div className='modal-container-image'>
                         <img src="./img/demo/dc-2.png" alt="doctor-calm-demo" />
@@ -130,12 +164,14 @@ function Main() {
                         It can save a lot of time, because the majority of users don't have any mental problems. The main code is maden by Node.js.
                     </p>
                 </div>
-            </div>
-            <div id="optimax">
+            </Modal>
+            <Modal isOpen={modalTwoIsOpen} onRequestClose={closeModalTwo} style={customStyles}>
                 <div className='modal-container-portfolio'>
                     <div className='modal-container-header'>
-                            <h1>Optimax Cart</h1>
+                        <h1>Optimax Cart</h1>
+                        <button className='btn-close' type='button' onClick={closeModalTwo}>
                             <img className='close' src="./img/icons/close.png" alt="close-cross" />
+                        </button>
                     </div>
                     <div className='modal-container-image'>
                         <img src="./img/demo/optimax-demo.png" alt="optimax-demo" />
@@ -149,7 +185,7 @@ function Main() {
                         It was a pleasure to use TypeScript, React and Redux during the process.
                     </p>
                 </div>
-            </div>
+            </Modal>
         </main>
     );
 }

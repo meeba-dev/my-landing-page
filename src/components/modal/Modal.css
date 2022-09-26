@@ -1,43 +1,24 @@
-#feedback,
-#doctor-calm,
-#optimax {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    overflow: auto;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.4);
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 1000ms ease-in-out;
 }
 
-#feedback h1 {
-    text-align: center;
-    padding-bottom: 5px;
+.ReactModal__Overlay--after-open{
+    opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+    opacity: 0;
 }
 
 .modal-container-portfolio {
     position: relative;
-    background-color: var(--main-color);
     padding: 5px 15px 15px;
-    border: 2px solid var(--black-color);
-    width: 50%;
+    width: 75%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 10px;
-    animation-name: pulloutmodal;
-    animation-duration: 0.5s;
-}
-
-@keyframes pulloutmodal {
-    from {top: -300px; opacity: 0}
-    to {top: 0; opacity: 1}
-}
-
-.modal-container {
-    margin: 10% auto;
 }
 
 .modal-container-header {
@@ -45,6 +26,7 @@
     justify-content: space-between;
     align-items: baseline;
     padding: 20px 10px;
+    background-color: inherit;
 }
 
 .modal-container-header img {
@@ -59,10 +41,9 @@
 .modal-container h1 {
     margin: 0 auto;
 }
-
+.modal-container,
 .modal-container-portfolio {
-    margin: 2% auto;
-    background-color: var(--white-color);
+    margin: 4% auto;
 }
 
 .modal-container-portfolio a {
