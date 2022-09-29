@@ -11,6 +11,10 @@
     opacity: 0;
 }
 
+.ReactModal__Body--open {
+    
+}
+
 .modal-container-portfolio {
     padding: 5px 15px 15px;
     width: 75%;
@@ -37,12 +41,17 @@
     cursor: pointer;
 }
 
+.modal-container-text {
+    text-align: center;
+}
+
 .modal-container h1 {
     margin: 0 auto;
 }
 .modal-container,
 .modal-container-portfolio {
     margin: 4% auto;
+    z-index: 2;
 }
 
 .modal-container-portfolio a {

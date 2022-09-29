@@ -14,6 +14,9 @@ const customStyles = {
         bottom: 'auto',
         minWidth: '40em',
         transform: 'translate(-50%, -50%)'
+    },
+    overlay: {
+        zIndex: 1000
     }
 }
 
@@ -25,14 +28,20 @@ Modal.setAppElement('#root');
 
 function Header() {
 
-    const [modalIsOpen, setIsOpen] = React.useState(false);
+    const [modalOneIsOpen, setOneIsOpen] = React.useState(false);
+    const [modalTwoIsOpen, setTwoIsOpen] = React.useState(false);
 
-    function openModal() {
-        setIsOpen(true);
+    function openModalOne() {
+        setOneIsOpen(true);
     }
-    function closeModal() {
-        setIsOpen(false);
+    function closeModalOne() {
+        setOneIsOpen(false);
     }
+    function openModalTwo() {
+        setTwoIsOpen(true);
+        setTimeout(() => setTwoIsOpen(false), 5000);
+    }
+
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -43,11 +52,13 @@ function Header() {
             }, (error) => {
                 console.log(error.text);
             });   
+        closeModalOne();
+        openModalTwo();
     };
 
     return(
         <header id="header">
-            <nav>
+            <nav className='container'>
                 <div className='nav-logo'>
                     <img src="./img/logo/logo.png" alt='logo'/>
                 </div>
@@ -66,14 +77,14 @@ function Header() {
             <div className='header-photo'>
                 <div className='header-photo-headline'>
                     <h1>Hi! I'm Mischa. I'm a website creator. Entirely at your service</h1>
-                    <button className='btn btn-header btn-fb' type="button" onClick={openModal}>Leave me a message</button>
+                    <button className='btn btn-header btn-fb' type="button" onClick={openModalOne}>Leave me a message</button>
                 </div>
             </div>
-            <Modal isOpen={modalIsOpen} onRequestClose={closeModal} style={customStyles}>
+            <Modal isOpen={modalOneIsOpen} onRequestClose={closeModalOne} style={customStyles}>
                 <div className='modal-container'>
                     <div className='modal-container-header'>
                         <h1>Contact me</h1>
-                        <button className='btn-close' type='button' onClick={closeModal}>
+                        <button className='btn-close' type='button' onClick={closeModalOne}>
                             <img className='close' src="./img/icons/close.png" alt="close-cross" />
                         </button>
                     </div>
@@ -87,6 +98,16 @@ function Header() {
                         <textarea className='textarea-form' name="message"placeholder="Message"></textarea>
                         <button className='btn btn-form' type="submit">Submit</button>
                     </form>
+                </div>
+            </Modal>
+            <Modal isOpen={modalTwoIsOpen} style={customStyles}>
+                <div className='modal-container'>
+                    <div className='modal-container-header'>
+                        <h1>Your message was sent!</h1>
+                    </div>
+                    <div className='modal-container-text'>
+                        <p>Thanks for contacting me. I will get in touch with you shortly</p>
+                    </div>
                 </div>
             </Modal>
         </header>

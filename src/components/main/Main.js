@@ -38,7 +38,7 @@ function Main() {
     }
     return(
         <main>
-            <div id="about-me">
+            <div id="about-me" >
                 <h1>About me</h1>
                 <div className='about-me-container'>
                     <div className='about-me-photo'>
