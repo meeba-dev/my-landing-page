@@ -40,7 +40,7 @@ function Main() {
         <main>
             <div id="about-me" >
                 <h1>About me</h1>
-                <div className='about-me-container'>
+                <div className='about-me-container container'>
                     <div className='about-me-photo'>
                         <div className='about-me-photo-container'>
                             <img src="./img/me/MK-4432.jpg" alt="me"/>
@@ -112,6 +112,16 @@ function Main() {
                     <li className='portfolio-container-item'>
                         <button type="button" className='btn-prt btn-prt-2' onClick={openModalTwo}>
                             <img src="./img/logo/optimax-logo-small.png" alt="optimax-logo" />
+                        </button>
+                    </li>
+                    <li className='portfolio-container-item'>
+                        <button type="button" className='btn-prt btn-prt-3'>
+                            <img src="./img/placeholder-small.png" alt="placeholder" />
+                        </button>
+                    </li>
+                    <li className='portfolio-container-item'>
+                        <button type="button" className='btn-prt btn-prt-4'>
+                            <img src="./img/placeholder-small-coffee.png" alt="placeholder" />
                         </button>
                     </li>
                     <li className='portfolio-container-item'>
