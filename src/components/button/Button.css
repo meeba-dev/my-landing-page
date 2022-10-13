@@ -11,6 +11,11 @@
     right: 5%;
     border: none;
     background-color: inherit;
+    transition: transform .7s;
+}
+
+.btn-close:hover {
+    transform: scale(1.2);
 }
 
 .btn-header {
@@ -23,6 +28,13 @@
 .btn-header:hover {
     color: var(--black-color);
     border: var(--black-color) solid 2px;
+    transition: color .7s ease-in-out, border .7s ease-in-out;
+}
+
+.btn-cv {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .btn-form,
@@ -37,6 +49,7 @@
 .btn-cv:hover {
     background-color: var(--main-color);
     color: var(--black-color);
+    transition: background-color .7s ease-in-out, color .7s ease-in-out;
 }
 
 .btn-prt {

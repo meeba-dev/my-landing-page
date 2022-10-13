@@ -23,9 +23,9 @@ header {
 }
 
 .header-photo-headline {
-    width: 50%;
     color: var(--main-color);
-    padding: 0 10% 10% 0;
+    padding: 10%;
+    width: 60%;
 }
 
 .header-photo-headline h1 {
@@ -37,7 +37,7 @@ nav {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    min-height: 180px;
+    min-height: 8em;
 }
 
 .nav-logo img {

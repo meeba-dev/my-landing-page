@@ -11,10 +11,6 @@
     opacity: 0;
 }
 
-.ReactModal__Body--open {
-    
-}
-
 .modal-container-portfolio {
     padding: 5px 15px 15px;
     width: 75%;
@@ -30,6 +26,11 @@
     align-items: baseline;
     padding: 20px 10px;
     background-color: inherit;
+}
+
+.modal-container-header-icons {
+    display: flex;
+    gap: 1em;
 }
 
 .modal-container-header img {
@@ -48,10 +49,10 @@
 .modal-container h1 {
     margin: 0 auto;
 }
+
 .modal-container,
 .modal-container-portfolio {
     margin: 4% auto;
-    z-index: 2;
 }
 
 .modal-container-portfolio a {
@@ -89,24 +90,34 @@
     gap: 15px;
 }
 
-.input-form, 
-.textarea-form {
-  background-color: var(--main-color);
-  padding: 5px 10px;
-  font-family: inherit;
-  border: 1px solid var(--black-color);
-  width: 400px;
+.input-form, .input-name-form, .textarea-form {
+    background-color: var(--main-color);
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: 700;
+    border: 1px solid var(--black-color);
+    padding: 10px; 
 }
 
-.input-form {
-  height: 30px;
+.name-form, .input-form, .textarea-form {
+    width: 75%;
+}
+
+.name-form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.input-name-form {
+    width: 100%;
 }
 
 .textarea-form {
-  resize: none;
-  height: 150px;
+    resize: none;
+    height: 10em;
 }
 
 ::placeholder {
-  color: var(--black-color);
+    color: var(--black-color);
 }

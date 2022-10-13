@@ -12,7 +12,7 @@ const customStyles = {
         left: '50%',
         right: 'auto',
         bottom: 'auto',
-        minWidth: '40em',
+        minWidth: '20em',
         transform: 'translate(-50%, -50%)'
     },
     overlay: {
@@ -95,9 +95,7 @@ function Main() {
                             I don't have a huge portfolio so I'm ready to help with various type of jobs.
                             I have some turnkey solutions and patterns, but I'll be working with your ideas by pleasure too.
                         </p>
-                        <div className='about-me-text-button'>
-                            <button className='btn btn-cv' type="button" onClick={downloadCV} download="pdf">Download CV</button>
-                        </div>
+                        <button className='btn btn-cv' type="button" onClick={downloadCV} download="pdf">Download CV</button>
                     </div>
                 </div>
             </div>
@@ -112,16 +110,6 @@ function Main() {
                     <li className='portfolio-container-item'>
                         <button type="button" className='btn-prt btn-prt-2' onClick={openModalTwo}>
                             <img src="./img/logo/optimax-logo-small.png" alt="optimax-logo" />
-                        </button>
-                    </li>
-                    <li className='portfolio-container-item'>
-                        <button type="button" className='btn-prt btn-prt-3'>
-                            <img src="./img/placeholder-small.png" alt="placeholder" />
-                        </button>
-                    </li>
-                    <li className='portfolio-container-item'>
-                        <button type="button" className='btn-prt btn-prt-4'>
-                            <img src="./img/placeholder-small-coffee.png" alt="placeholder" />
                         </button>
                     </li>
                     <li className='portfolio-container-item'>
@@ -157,6 +145,17 @@ function Main() {
                 <div className='modal-container-portfolio'>
                     <div className='modal-container-header'>
                         <h1>Doctor Calm</h1>
+                        <ul className='modal-container-header-icons'>
+                            <li>
+                                <img src="./img/icons/javascript.png" alt="icon-js" />
+                            </li>
+                            <li>
+                                <img src="./img/icons/nodejs.png" alt="icon-nodejs" />
+                            </li>
+                            <li>
+                                <img src="./img/icons/mongodb.png" alt="icon-mongo" />
+                            </li>
+                        </ul>
                         <button className='btn-close' type='button' onClick={closeModalOne}>
                             <img className='close' src="./img/icons/close.png" alt="close-cross" />
                         </button>
@@ -179,6 +178,20 @@ function Main() {
                 <div className='modal-container-portfolio'>
                     <div className='modal-container-header'>
                         <h1>Optimax Cart</h1>
+                        <ul className='modal-container-header-icons'>
+                            <li>
+                                <img src="./img/icons/typescript.png" alt="icon-ts" />
+                            </li>
+                            <li>
+                                <img src="./img/icons/react.png" alt="icon-react" />
+                            </li>
+                            <li>
+                                <img src="./img/icons/redux.png" alt="icon-redux" />
+                            </li>
+                            <li>
+                                <img src="./img/icons/mongodb.png" alt="icon-mongo" />
+                            </li>
+                        </ul>
                         <button className='btn-close' type='button' onClick={closeModalTwo}>
                             <img className='close' src="./img/icons/close.png" alt="close-cross" />
                         </button>

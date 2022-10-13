@@ -58,7 +58,7 @@ function Header() {
 
     return(
         <header id="header">
-            <nav className='container'>
+            <nav className='nav'>
                 <div className='nav-logo'>
                     <img src="./img/logo/logo.png" alt='logo'/>
                 </div>
@@ -75,7 +75,7 @@ function Header() {
                 </ul>
             </nav>
             <div className='header-photo'>
-                <div className='header-photo-headline container'>
+                <div className='header-photo-headline'>
                     <h1>Hi! I'm Mischa. I'm a website creator. Entirely at your service</h1>
                     <button className='btn btn-header btn-fb' type="button" onClick={openModalOne}>Leave me a message</button>
                 </div>
@@ -90,8 +90,8 @@ function Header() {
                     </div>
                     <form ref={form} onSubmit={sendEmail} className='feedback-form' method="post" encType="text/plain">
                         <div className='name-form'>
-                            <input className='input-form' type="text" name="first_name" id="input-form-firstname" placeholder="First name" />
-                            <input className='input-form' type="text" name="last_name" id="input-form-lastname" placeholder="Last name" />
+                            <input className='input-name-form' type="text" name="first_name" id="input-form-firstname" placeholder="First name" />
+                            <input className='input-name-form' type="text" name="last_name" id="input-form-lastname" placeholder="Last name" />
                         </div>
                         <input className='input-form' type="email" name="email" placeholder="Email" />
                         <input className='input-form' type="text" name="subject" placeholder="Subject" />

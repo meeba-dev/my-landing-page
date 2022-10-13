@@ -12,17 +12,15 @@
     gap: 10px;
 }
 
-.about-me-text-cv img,
 .footer-socials img {
     height: 35px;
     width: 35px;
     border: var(--main-color) 3px solid;
+    transition: transform .7s;
 }
 
-.about-me-text-cv img:hover,
 .footer-socials img:hover {
-    text-decoration: underline;
-    border-bottom: var(--black-color) 3px solid;
+    transform: scale(1.4);
 }
 
 .footer-suggestions {
