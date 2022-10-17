@@ -124,10 +124,13 @@
     header {
         font-size: 0.7em;
     }
+    .nav-logo img {
+        max-width: 50px;
+    }
     .header-photo {
         border-top: var(--black-color) 1px solid;
         border-bottom: var(--black-color) 1px solid;
-        background-position: 70%;
+        min-height: 200px;
     }
     .header-photo-headline {
         text-align: center;
@@ -136,23 +139,43 @@
     .header-photo-headline h1 {
         font-size: 2em;
     }
+    #about-me h1, #portfolio h1 {
+        font-size: 22px;
+    }
     .about-me-container {
         display: flex;
         flex-direction: column;
         gap: 1em;
     }
+    .about-me-text-icons img {
+        width: 12px;
+        height: 12px;
+    }
     .about-me-text {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0 6em;
+        padding: 0 4em;
+    }
+    .about-me-text-description {
+        font-size: 10px;
     }
     .btn-cv {
         position: relative;
         margin: 0 auto;
     }
+    .portfolio-container-item {
+        max-width: 50%;
+    }
     .payment-options-list-item {
-        width: 20em;
+        width: 10em;
         text-align: center;
+    }
+    .footer-socials img {
+        height: 25px;
+        width: 25px;
+    }
+    .footer-copyrights {
+        font-size: 10px;
     }
 }
