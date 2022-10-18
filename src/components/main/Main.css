@@ -119,7 +119,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 2em;
     }
     header {
         font-size: 0.7em;
@@ -137,7 +136,12 @@
         margin: 0 auto;
     }
     .header-photo-headline h1 {
-        font-size: 2em;
+        -webkit-text-stroke: 1px #000;
+        font-size: 1.5em;
+    }
+    .btn-header {
+        font-size: 0.8em;
+        padding: 5px;
     }
     #about-me h1, #portfolio h1 {
         font-size: 22px;
@@ -147,7 +151,15 @@
         flex-direction: column;
         gap: 1em;
     }
+    .about-me-photo img {
+        width: 215px;
+        height: 240px;
+    }
+    .about-me-text-icons {
+        padding-left: 0;
+    }
     .about-me-text-icons img {
+        vertical-align: middle;
         width: 12px;
         height: 12px;
     }
