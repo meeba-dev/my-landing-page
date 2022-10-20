@@ -115,6 +115,7 @@
     }
 }
 
+/* Smartphones */
 @media (max-width: 480px) {
     header {
         font-size: 0.7em;
@@ -194,5 +195,18 @@
     }
     .footer-copyrights {
         font-size: 10px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .about-me-photo img {
+        width: 260px;
+        height: 400px;
+    }
+    .btn-cv {
+        white-space: nowrap;
+        position: absolute;
+        right: 135%;
+        bottom: 15%;
     }
 }
