@@ -33,6 +33,7 @@
 }
   
 .about-me-text-icons img {
+    vertical-align: middle;
     width: 20px;
     height: 20px;
 }
@@ -115,11 +116,6 @@
 }
 
 @media (max-width: 480px) {
-    main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
     header {
         font-size: 0.7em;
     }
@@ -129,6 +125,8 @@
     .header-photo {
         border-top: var(--black-color) 1px solid;
         border-bottom: var(--black-color) 1px solid;
+        background-size: 125%;
+        background-position: 100% 10%;
         min-height: 200px;
     }
     .header-photo-headline {
@@ -143,6 +141,9 @@
         font-size: 0.8em;
         padding: 5px;
     }
+    #about-me {
+        padding-top: 25px;
+    }
     #about-me h1, #portfolio h1 {
         font-size: 22px;
     }
@@ -155,19 +156,23 @@
         width: 215px;
         height: 240px;
     }
-    .about-me-text-icons {
-        padding-left: 0;
-    }
     .about-me-text-icons img {
-        vertical-align: middle;
         width: 12px;
         height: 12px;
     }
     .about-me-text {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        padding: 0 4em;
+        padding: 0 25px;
+    }
+    .about-me-text-icons {
+        margin: 0 auto;
+    }
+    .about-me-text-icons li {
+        padding: 0 5px;
+    }
+    .about-me-text-icons li img {
+        display: block;
     }
     .about-me-text-description {
         font-size: 10px;
@@ -180,7 +185,7 @@
         max-width: 50%;
     }
     .payment-options-list-item {
-        width: 10em;
+        width: 8em;
         text-align: center;
     }
     .footer-socials img {
