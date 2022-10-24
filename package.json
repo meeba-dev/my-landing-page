@@ -1,5 +1,6 @@
 {
   "name": "my-landing-page",
+  "homepage": "https://mikhailbaum.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

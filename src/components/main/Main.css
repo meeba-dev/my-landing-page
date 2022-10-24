@@ -198,6 +198,7 @@
     }
 }
 
+/* Pads */
 @media (max-width: 1024px) {
     .about-me-photo img {
         width: 260px;
