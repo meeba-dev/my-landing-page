@@ -36,3 +36,13 @@
     background-color: var(--black-color);
     color: var(--main-color);
 }
+
+@media screen and (max-width: 480px) {
+    .footer-socials img {
+        height: 30px;
+        width: 30px;
+    }
+    .footer-copyrights {
+        font-size: 12px;
+    }
+}

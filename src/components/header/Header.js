@@ -12,7 +12,11 @@ const customStyles = {
         left: '50%',
         right: 'auto',
         bottom: 'auto',
-        minWidth: '40em',
+        minWidth: '18em',
+        maxWidth: '35em',
+        minHeight: '18em',
+        maxHeight: '45em',
+        width: '90%',
         transform: 'translate(-50%, -50%)'
     },
     overlay: {

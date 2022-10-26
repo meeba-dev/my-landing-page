@@ -116,7 +116,7 @@
 }
 
 /* Smartphones */
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
     header {
         font-size: 1em;
     }
@@ -183,17 +183,10 @@
         width: 8em;
         text-align: center;
     }
-    .footer-socials img {
-        height: 25px;
-        width: 25px;
-    }
-    .footer-copyrights {
-        font-size: 10px;
-    }
 }
 
 /* Pads */
-@media (min-width: 480px) and (max-width: 1024px) {
+@media screen and (min-width: 480px) and (max-width: 1024px) {
     .about-me-photo img {
         width: 260px;
         height: 400px;
