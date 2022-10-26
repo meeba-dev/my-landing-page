@@ -11,6 +11,27 @@
     opacity: 0;
 }
 
+.Modal {
+    position: relative;
+    max-height: 95%;
+    width: 80%;
+    background-color: #ffffff;
+    border: 2px solid #000;
+    overflow: auto;
+}
+  
+.Overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(201,201,201,0.8);
+}
+
 .modal-container-portfolio {
     padding: 5px 15px 15px;
     width: 75%;
@@ -68,7 +89,9 @@
 }
 
 .modal-container-image {
-    width: 100%;
+    display: flex;
+    max-width: 80%;
+    max-height: 60%;
 }
 
 .modal-container-image img {

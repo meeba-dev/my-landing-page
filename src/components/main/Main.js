@@ -4,25 +4,6 @@ import React from 'react';
 import Modal from 'react-modal';
 import { downloadCV } from './index.js';
 
-const customStyles = {
-    content: {
-        background: 'var(--white-color)',
-        border: '2px solid var(--black-color)',
-        top: '50%',
-        left: '50%',
-        right: 'auto',
-        bottom: 'auto',
-        minWidth: '16em',
-        maxWidth: '40em',
-        minHeight: '18em',
-        maxHeight: '45em',
-        width: '90%',
-        transform: 'translate(-50%, -50%)'
-    },
-    overlay: {
-        zIndex: 1000
-    }
-}
 
 function Main() {
     const [modalOneIsOpen, setOneIsOpen] = React.useState(false);
@@ -145,7 +126,7 @@ function Main() {
                 </ul>
             </div>
             <Map />
-            <Modal isOpen={modalOneIsOpen} onRequestClose={closeModalOne} style={customStyles}>
+            <Modal isOpen={modalOneIsOpen} onRequestClose={closeModalOne} className="Modal" overlayClassName="Overlay">
                 <div className='modal-container-portfolio'>
                     <div className='modal-container-header'>
                         <h1>Doctor Calm</h1>
@@ -165,7 +146,7 @@ function Main() {
                         </button>
                     </div>
                     <div className='modal-container-image'>
-                        <img src="./img/demo/dc-2.png" alt="doctor-calm-demo" />
+                        <img src="./img/demo/dc-2.png" alt="doctor-calm-demo-2" />
                     </div>
                     <a href="https://vk.com/doctor_calm" target="_blank" rel="noreferrer">Try it out</a>
                     <a href="https://github.com/meeba-dev/bot-antidep" target="_blank" rel="noreferrer">Look at the code</a>
@@ -178,7 +159,7 @@ function Main() {
                     </p>
                 </div>
             </Modal>
-            <Modal isOpen={modalTwoIsOpen} onRequestClose={closeModalTwo} style={customStyles}>
+            <Modal isOpen={modalTwoIsOpen} onRequestClose={closeModalTwo} className="Modal" overlayClassName="Overlay">
                 <div className='modal-container-portfolio'>
                     <div className='modal-container-header'>
                         <h1>Optimax Cart</h1>

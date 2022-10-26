@@ -117,25 +117,6 @@
 
 /* Smartphones */
 @media screen and (max-width: 480px) {
-    header {
-        font-size: 1em;
-    }
-    .nav-logo img {
-        max-width: 50px;
-    }
-    .header-photo {
-        border-top: var(--black-color) 1px solid;
-        border-bottom: var(--black-color) 1px solid;
-        background-position: 50%;
-        min-height: 350px;
-    }
-    .header-photo-headline h1 {
-        font-size: 1.5em;
-    }
-    .btn-header {
-        font-size: 0.8em;
-        padding: 5px;
-    }
     #about-me {
         padding-top: 25px;
     }
@@ -190,11 +171,5 @@
     .about-me-photo img {
         width: 260px;
         height: 400px;
-    }
-    .btn-cv {
-        white-space: nowrap;
-        position: absolute;
-        right: 135%;
-        bottom: 15%;
     }
 }
