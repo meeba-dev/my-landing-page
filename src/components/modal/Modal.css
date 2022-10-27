@@ -14,9 +14,9 @@
 .Modal {
     position: relative;
     max-height: 95%;
-    width: 80%;
-    background-color: #ffffff;
-    border: 2px solid #000;
+    max-width: 80%;
+    background-color: var(--white-color);
+    border: 2px solid var(--black-color);
     overflow: auto;
 }
   
@@ -29,7 +29,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(201,201,201,0.8);
+    background-color: var(--overlay-color);
     z-index: 1000;
 }
 

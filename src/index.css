@@ -10,6 +10,7 @@
     --main-color: #fff36d;
     --black-color: #000000;
     --white-color: #ffffff;
+    --overlay-color: rgba(255, 255, 255, 0.75);
 }
 
 input:focus,
