@@ -97,16 +97,6 @@ function Main() {
                             <img src="./img/logo/optimax-logo-small.png" alt="optimax-logo" />
                         </button>
                     </li>
-                    <li className='portfolio-container-item'>
-                        <button type="button" className='btn-prt btn-prt-3'>
-                            <img src="./img/placeholder-small.png" alt="placeholder" />
-                        </button>
-                    </li>
-                    <li className='portfolio-container-item'>
-                        <button type="button" className='btn-prt btn-prt-4'>
-                            <img src="./img/placeholder-small-coffee.png" alt="placeholder" />
-                        </button>
-                    </li>
                 </ul>
             </div>
             <div id="payment-options">
