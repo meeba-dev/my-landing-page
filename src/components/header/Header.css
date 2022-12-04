@@ -65,7 +65,8 @@ nav {
 }
 
 /* Smartphones */
-@media screen and (max-width: 480px) {
+/* iPhone 5S */
+@media screen and (max-width: 370px) {
     header {
         font-size: 1em;
     }
@@ -84,6 +85,15 @@ nav {
     .btn-header {
         font-size: 0.8em;
         padding: 5px;
+    }
+}
+/* iPhone 6, 7 */
+@media screen and (min-width: 370px) and (max-width: 430px) {
+    .header-photo {
+        min-height: 500px;
+    }
+    .header-photo-headline h1 {
+        font-size: 1.8em;
     }
 }
 
