@@ -87,30 +87,8 @@ nav {
     }
 }
 
-@media (min-height: 570px) and (max-height: 930px) {
-    .header-photo {
-        min-height: 550px;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        background-position: 68%;
-        background-size: auto;
-    }
-    .header-photo-headline {
-        text-align: center;
-        min-width: 20em;
-    }
-    .header-photo-headline h1 {
-        font-size: 1.8em;
-    }
-    .btn-header {
-        font-size: 0.8em;
-        padding: 8px;
-    }
-}
-
 /* Pads */
-@media screen and (min-width: 480px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .btn-cv {
         white-space: nowrap;
         position: absolute;

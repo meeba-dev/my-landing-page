@@ -117,16 +117,13 @@
 
 /* Smartphones */
 @media screen and (max-width: 480px) {
-    #about-me {
-        padding-top: 25px;
-    }
     #about-me h1, #portfolio h1 {
         font-size: 22px;
     }
     .about-me-container {
         display: flex;
         flex-direction: column;
-        gap: 1em;
+        gap: 0;
     }
     .about-me-photo img {
         width: 185px;
@@ -139,7 +136,8 @@
     .about-me-text {
         display: flex;
         flex-direction: column;
-        padding: 0 25px;
+        padding: 35px 25px;
+        position: relative;
     }
     .about-me-text-icons {
         margin: 0 auto;
@@ -154,8 +152,12 @@
         font-size: 10px;
     }
     .btn-cv {
-        position: relative;
-        margin: 0 auto;
+        position: absolute;
+        right: 30%;
+        bottom: -10%;
+    }
+    #portfolio {
+        min-height: 20em;
     }
     .portfolio-container-item {
         max-width: 50%;
